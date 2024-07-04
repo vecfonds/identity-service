@@ -7,9 +7,9 @@ import java.time.LocalDate;
 
 @Data
 public class UserCreationRequest {
-    @Size(min = 5, message = "Username must be at least 5 characters!")
+    @Size(min = 5, message = "INVALID_USERNAME")
     private String username;
-    @Size(min = 5, message = "Password must be at least 5 characters!")
+    @Size(min = 5, message = "INVALID_PASSWORDs")
     private String password;
     private String firstName;
     private String lastName;
