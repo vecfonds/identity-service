@@ -5,9 +5,10 @@ import com.vecfonds.identity_service.dto.request.UserUpdateRequest;
 import com.vecfonds.identity_service.dto.response.UserResponse;
 import com.vecfonds.identity_service.entity.User;
 import org.mapstruct.Mapper;
+import org.mapstruct.MappingConstants;
 import org.mapstruct.MappingTarget;
 
-@Mapper(componentModel = "spring")
+@Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
 public interface UserMapper {
     User toUser(UserCreationRequest request);
     UserResponse toUserResponse(User user);

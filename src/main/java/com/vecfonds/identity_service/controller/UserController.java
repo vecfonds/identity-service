@@ -4,7 +4,6 @@ import com.vecfonds.identity_service.dto.response.ApiResponse;
 import com.vecfonds.identity_service.dto.request.UserCreationRequest;
 import com.vecfonds.identity_service.dto.request.UserUpdateRequest;
 import com.vecfonds.identity_service.dto.response.UserResponse;
-import com.vecfonds.identity_service.entity.User;
 import com.vecfonds.identity_service.service.UserService;
 import jakarta.validation.Valid;
 import lombok.AccessLevel;
