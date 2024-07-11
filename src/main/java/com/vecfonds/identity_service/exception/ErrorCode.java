@@ -2,7 +2,6 @@ package com.vecfonds.identity_service.exception;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
 
@@ -15,7 +14,8 @@ public enum ErrorCode {
     USER_EXISTED(1001, "User existed"),
     INVALID_USERNAME(1003, "Username must be at least 5 characters"),
     INVALID_PASSWORD(1004, "Password must be at least 5 characters!"),
-    USER_NOT_EXISTED(1005, "User not found!");
+    USER_NOT_EXISTED(1005, "User not found!"),
+    UNAUTHENTICATED(1006, "Unauthenticated!");
 
     int code;
     String message;
